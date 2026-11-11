@@ -1,0 +1,31 @@
+{
+  "name": "etherreceipt",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "vite build client",
+    "start": "node server/src/index.js",
+    "server": "node --watch server/src/index.js",
+    "client": "vite client",
+    "dev": "concurrently -k \"npm:server\" \"npm:client\""
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "vite": "^5.4.0"
+  }
+}

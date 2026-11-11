@@ -1,0 +1,7 @@
+# Render.com: one web service serves the API and the built frontend
+services:
+  - type: web
+    name: etherreceipt
+    runtime: node
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
