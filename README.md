@@ -16,6 +16,11 @@ Development (live reload): `npm run dev` → frontend http://localhost:5173, API
 ## Features
 Wallet connect · ETH/USDC send · payment verify · wallet balance (Ethereum Mainnet + Sepolia)
 
+## Vercel (poora project ek jagah)
+- GitHub par push karein, Vercel mein import karein. Settings alag nahi badalni: `vercel.json` ne build aur output (client/dist) set kar diya hai.
+- `/api/*` Vercel serverless functions (`api/` folder) hain, Express server ki zaroorat nahi.
+- Optional: Settings → Environment Variables mein MAINNET_RPC / SEPOLIA_RPC (Alchemy/Infura) daalein, phir Redeploy.
+
 ## Hosting (Render / Railway)
 Build: `npm install --include=dev && npm run build` · Start: `npm start` · optional env: see .env.example
 
